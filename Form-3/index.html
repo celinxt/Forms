@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- prettier-ignore -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet" />
+    <!-- prettier-ignore -->
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon" />
+
+    <title>Form-3</title>
+  </head>
+  <body>
+    <header>
+      <div id="container-one">
+        <h1>Avalie sua mentoria</h1>
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img src="assets/stars.svg" alt="Image of stars rating" />
+      </div>
+    </header>
+
+    <div id="main-form">
+      <form>
+        <fieldset>
+          <div class="legend-one">
+            <legend class="legend-align">Informações pessoais</legend>
+          </div>
+
+          <div id="name-lastname">
+            <div>
+              <label for="name"> Nome </label>
+              <input
+                type="text"
+                id="name"
+                class="input-style style-name"
+                required />
+            </div>
+
+            <div>
+              <label for="lastname"> Sobrenome </label>
+              <input
+                type="text"
+                id="lastname"
+                class="input-style style-name"
+                required />
+            </div>
+          </div>
+
+          <label for="email">
+            Email
+            <span class="spn-label">(digite um email válido)</span>
+          </label>
+          <input type="text" id="email" class="input-style" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Informações do mentor</legend>
+
+          <div class="border">
+            <label for="mentor"> Selecione quem foi seu mentor </label>
+            <select id="mentor" class="input-style style-name">
+              <option value="none" disabled selected>Escolha o mentor</option>
+              <option value="mentor-one">Mentor 1</option>
+              <option value="mentor-two">Mentor 2</option>
+              <option value="mentor-three">Mentor 3</option>
+            </select>
+
+            <label for="textarea">Feedback sobre o mentor</label>
+            <textarea id="textarea" class="input-style"></textarea>
+
+            <label for="check" id="check-div">
+              <input type="checkbox" id="check" />
+              Todas as minhas dúvidas foram esclarecidas durante a mentoria.
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Agendando próxima mentoria</legend>
+
+          <div id="date-time" class="border">
+            <div id="date-div">
+              <label for="date"> Data </label>
+              <input
+                type="date"
+                class="input-style style-d"
+                min="1997-01-01"
+                max="2030-12-31"
+                required />
+            </div>
+
+            <div id="time-starts-div">
+              <label for="time-starts">Das</label>
+              <input
+                type="text"
+                id="time-starts"
+                class="input-style style-t"
+                placeholder="19:00"
+                maxlength="5"
+                required />
+            </div>
+
+            <div id="time-ends-div">
+              <label for="time-ends">Até</label>
+              <input
+                type="text"
+                id="time-ends"
+                class="input-style style-t"
+                placeholder="20:00"
+                maxlength="5"
+                required />
+            </div>
+          </div>
+        </fieldset>
+
+        <footer>
+          <input type="submit" value="Salvar" id="button" />
+        </footer>
+      </form>
+    </div>
+  </body>
+</html>

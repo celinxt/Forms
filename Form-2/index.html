@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- prettier-ignore -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet" />
+    <!-- prettier-ignore -->
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon" />
+
+    <title>Form-2</title>
+  </head>
+  <body>
+    <header>
+      <div id="container-one">
+        <h1>MENTORIA</h1>
+        <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+      </div>
+    </header>
+
+    <div id="main-form">
+      <form>
+        <fieldset>
+          <legend>Informações pessoais</legend>
+
+          <div id="name-lastname">
+            <div>
+              <label for="name"> Nome </label>
+              <input
+                type="text"
+                id="name"
+                class="input-style style-name"
+                required />
+            </div>
+
+            <div>
+              <label for="lastname"> Sobrenome </label>
+              <input
+                type="text"
+                id="lastname"
+                class="input-style style-name"
+                required />
+            </div>
+          </div>
+
+          <label for="email">
+            Email
+            <span class="spn-label"> (digite um email válido) </span>
+          </label>
+          <input type="text" id="email" class="input-style" required />
+
+          <label for="password">
+            Senha
+            <span class="spn-label"> (mínimo de 6 caracteres) </span>
+          </label>
+          <input type="text" id="password" class="input-style" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Informações do mentor</legend>
+
+          <label for="admin-email">
+            Nome do seu mentor
+            <span class="spn-label"> (só o primeiro nome) </span>
+          </label>
+          <input type="text" id="admin-email" class="input-style" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Seus horários disponíveis</legend>
+          <legend class="mentoring">Primeira mentoria</legend>
+
+          <div id="date-time">
+            <div id="date-div">
+              <label for="date"> Data </label>
+              <input
+                type="date"
+                class="input-style style-d"
+                min="1997-01-01"
+                max="2030-12-31"
+                required />
+            </div>
+
+            <div id="time-starts-div">
+              <label for="time-starts"> Das </label>
+              <input
+                type="text"
+                id="time-starts"
+                class="input-style style-t"
+                placeholder="19:00"
+                maxlength="5"
+                required />
+            </div>
+
+            <div id="time-ends-div">
+              <label for="time-ends"> Até </label>
+              <input
+                type="text"
+                id="time-ends"
+                class="input-style style-t"
+                placeholder="20:00"
+                maxlength="5"
+                required />
+            </div>
+          </div>
+
+          <legend class="mentoring">Segunda mentoria</legend>
+          <div id="date-time">
+            <div id="date-div">
+              <label for="date"> Data </label>
+              <input
+                type="date"
+                class="input-style style-d"
+                min="1997-01-01"
+                max="2030-12-31"
+                required />
+            </div>
+
+            <div id="time-starts-div">
+              <label for="time-starts-two"> Das </label>
+              <input
+                type="text"
+                id="time-starts-two"
+                class="input-style style-t"
+                placeholder="19:00"
+                maxlength="5"
+                required />
+            </div>
+
+            <div id="time-ends-div">
+              <label for="time-ends-two"> Até </label>
+              <input
+                type="text"
+                id="time-ends-two"
+                class="input-style style-t"
+                placeholder="20:00"
+                maxlength="5"
+                required />
+            </div>
+          </div>
+        </fieldset>
+
+        <footer>
+          <input type="submit" value="Salvar" id="button" />
+        </footer>
+      </form>
+    </div>
+  </body>
+</html>
