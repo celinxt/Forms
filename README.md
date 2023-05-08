@@ -30,8 +30,6 @@
 <p align="center"><img src = "assets/Form-1.gif" alt="Project image" height="400"></p>
 <p align="center"><img src = "assets/Form-2.gif" alt="Project image" height="400"></p>
 <p align="center"><img src = "assets/Form-3.gif" alt="Project image" height="400"></p>
-<br><br>
-Project Link - https://celinxt.github.io/Forms.me/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
